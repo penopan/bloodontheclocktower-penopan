@@ -1,0 +1,448 @@
+[
+  {
+    "id": "_meta",
+    "author": "Penopan",
+    "name": "End of the Rainbow test",
+    "bootlegger": [
+	  "The spicy version of the old Lil' Monsta / Magician jinx is in play.",
+	  "The old Lil' Monsta / Scarlet Woman jinx is in play.",
+	  "Homebrew jinxes between Lil' Monsta and Exorcist, Goon, and Devil's Advocate.",
+	  "Homebrew jinx between Lycanthrope and Mathematician.",
+	  "The Lycanthrope may choose dead players who have not been publicly announced as dead, such as the Gambler and Tinker.",
+	  "The Lil' Monsta has two spots in the night order: first for moving the Lil' Monsta, second for killing."
+    ],
+	"firstNight": [
+	"dusk",
+	"minioninfo",
+	"snitch_eotr",
+	"sailor_eotr",
+	"courtier_eotr",
+	"xaan_eotr",
+	"magician_eotr",
+	"lilmonsta_eotr",
+	"godfather_eotr",
+	"devilsadvocate_eotr",
+	"pixie_eotr",
+	"grandmother_eotr",
+	"villageidiot_eotr",
+	"mathematician_eotr",
+	"dawn"
+	],
+	"otherNight": [
+	"dusk",
+	"sailor_eotr",
+	"courtier_eotr",
+	"xaan_eotr",
+	"exorcist_eotr",
+	"scarletwoman_eotr",
+	"magician_eotr",
+	"lilmonsta_eotr",
+	"gambler_eotr",
+	"lycanthrope_eotr",
+	"lilmonsta_eotr",
+	"assassin_eotr",
+	"godfather_eotr",
+	"devilsadvocate_eotr",
+	"sweetheart_eotr",
+	"tinker_eotr",
+	"grandmother_eotr",
+	"villageidiot_eotr",
+	"mathematician_eotr",
+	"dawn"
+	]
+  },
+  {
+    "id": "grandmother_eotr",
+	"edition": "badmoonrising",
+    "name": "Grandmother",
+    "firstNightReminder": "Point to the grandchild player & show their character token.",
+    "otherNightReminder": "If the grandchild was killed by the Demon, the Grandmother dies too. :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "You start knowing a good player & their character. If the Demon kills them, you die too.",
+    "jinxes": [],
+	"reminders": [
+	"Grandchild",
+	"Dead"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/grandmother.png"
+  },
+  {
+    "id": "pixie_eotr",
+	"edition": "experimental",
+    "name": "Pixie",
+    "firstNightReminder": "Show the Townsfolk character token marked <b>MAD</b>.",
+    "otherNightReminder": "",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+    "jinxes": [],
+	"reminders": [
+	"Mad",
+	"Has Ability"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/pixie.png"
+  },
+  {
+    "id": "sailor_eotr",
+	"edition": "badmoonrising",
+    "name": "Sailor",
+    "firstNightReminder": "The Sailor chooses a living player. :reminder:",
+    "otherNightReminder": "The Sailor chooses a living player. :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
+    "jinxes": [],
+	"reminders": [
+	"Drunk"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/sailor.png"
+  },
+  {
+    "id": "villageidiot_eotr",
+	"edition": "experimental",
+    "name": "Village Idiot",
+    "firstNightReminder": "Choose a Village Idiot to be drunk. Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "otherNightReminder": "Wake the Village Idiots one at a time, they choose a player, show either good or evil thumbs according to the alignment of that player.",
+    "team": "townsfolk",
+    "setup": true,
+    "ability": "Each night, choose a player: you learn their alignment. [+0 to +2 Village Idiots. 1 of the extras is drunk]",
+    "special": [
+		{
+		"name": "bag-duplicate",
+		"type": "selection"
+		}
+	],
+    "jinxes": [],
+	"reminders": [
+	"Drunk"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/villageidiot.png"
+  },
+  {
+    "id": "mathematician_eotr",
+	"edition": "sectsandviolets",
+    "name": "Mathematician",
+    "firstNightReminder": "Give a finger signal.",
+    "otherNightReminder": "Give a finger signal.",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night, you learn how many players' abilities worked abnormally (since dawn) due to another character's ability.",
+    "jinxes": [],
+	"reminders": [
+	"Abnormal"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/mathematician.png"
+  },
+  {
+    "id": "magician_eotr",
+    "edition": "experimental",
+    "name": "Magician",
+    "firstNightReminder": "The Magician chooses a Minion character to babysit Lil' Monsta. :reminder:",
+    "otherNightReminder": "The Magician chooses a Minion character to babysit Lil' Monsta. :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night, choose a Minion: if alive, they babysit Lil' Monsta. If not, you do but if you die while doing so, evil wins. If all Minions are dead, good wins.",
+    "jinxes": [],
+	"reminders": [],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/magician.png"
+  },
+  {
+    "id": "gambler_eotr",
+	"edition": "badmoonrising",
+	"name": "Gambler",
+	"firstNightReminder": "",
+	"otherNightReminder": "The Gambler chooses a player & a character. :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+    "jinxes": [],
+	"reminders": [
+	"Dead"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/gambler.png"
+  },
+  {
+    "id": "exorcist_eotr",
+	"edition": "badmoonrising",
+	"name": "Exorcist",
+	"firstNightReminder": "",
+	"otherNightReminder": "The Exorcist chooses a player. :reminder: Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the <b>THIS CHARACTER SELECTED YOU</b> & Exorcist tokens. Point to the Exorcist.",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
+    "jinxes": [],
+	"reminders": [
+	"Chosen"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/exorcist.png"
+  },
+  {
+    "id": "lycanthrope_eotr",
+	"edition": "experimental",
+	"name": "Lycanthrope",
+	"firstNightReminder": "",
+	"otherNightReminder": "The Lycanthrope chooses a player. :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Each night*, choose an alive player. If good, they die & the Demon doesn’t kill tonight. One good player registers as evil.",
+    "jinxes": [
+		{"id": "mathematician_eotr", "reason": "The Lycanthrope's Faux Paw does not register as evil to the Mathematician."}
+	],
+	"reminders": [
+	"Faux Paw",
+	"Dead"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/lycanthrope.png"
+  },
+  {
+    "id": "courtier_eotr",
+	"edition": "badmoonrising",
+    "name": "Courtier",
+    "firstNightReminder": "The Courtier might choose a character. :reminder: :reminder:",
+    "otherNightReminder": "The Courtier might choose a character. :reminder: :reminder:",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
+    "jinxes": [],
+    "reminders": [
+	"No Ability",
+	"Drunk 3",
+	"Drunk 2",
+	"Drunk 1"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/courtier.png"
+  },
+  {
+    "id": "slayer_eotr",
+	"edition": "troublebrewing",
+    "name": "Slayer",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
+    "jinxes": [],
+    "reminders": [
+	"No Ability"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/slayer.png"
+  },
+  {
+    "id": "tealady_eotr",
+	"edition": "badmoonrising",
+	"name": "Tea Lady",
+	"firstNightReminder": "",
+	"otherNightReminder": "",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "If both your alive neighbors are good, they can't die.",
+    "jinxes": [],
+	"reminders": [
+	"Cannot Die"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/tealady.png"
+  },
+  {
+    "id": "pacifist_eotr",
+	"edition": "badmoonrising",
+	"name": "Pacifist",
+	"firstNightReminder": "",
+	"otherNightReminder": "",
+    "team": "townsfolk",
+    "setup": false,
+    "ability": "Executed good players might not die.",
+    "jinxes": [],
+	"reminders": [],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/pacifist.png"
+  },
+  {
+    "id": "goon_eotr",
+	"edition": "badmoonrising",
+	"name": "Goon",
+	"firstNightReminder": "",
+	"otherNightReminder": "",
+    "team": "outsider",
+    "setup": false,
+    "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.",
+    "jinxes": [],
+	"reminders": [
+	"Drunk"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/goon.png"
+  },
+  {
+    "id": "tinker_eotr",
+	"edition": "badmoonrising",
+	"name": "Tinker",
+	"firstNightReminder": "",
+	"otherNightReminder": "The Tinker might die. :reminder:",
+    "team": "outsider",
+    "setup": false,
+    "ability": "You might die at any time.",
+    "jinxes": [],
+	"reminders": [
+	"Dead"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/tinker.png"
+  },
+  {
+    "id": "sweetheart_eotr",
+	"edition": "sectsandviolets",
+	"name": "Sweetheart",
+	"firstNightReminder": "",
+	"otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now. :reminder:",
+    "team": "outsider",
+    "setup": false,
+    "ability": "When you die, 1 player is drunk from now on.",
+    "jinxes": [],
+	"reminders": [
+	"Drunk"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/sweetheart.png"
+  },
+  {
+    "id": "snitch_eotr",
+	"edition": "experimental",
+	"name": "Snitch",
+	"firstNightReminder": "Wake each Minion. Show the <b>THESE CHARACTERS ARE NOT IN PLAY</b> token and three not-in-play character tokens. Put each Minion to sleep.",
+	"otherNightReminder": "",
+    "team": "outsider",
+    "setup": false,
+    "ability": "Each Minion gets 3 bluffs.",
+    "jinxes": [],
+	"reminders": [],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/snitch.png"
+  },
+  {
+    "id": "godfather_eotr",
+	"edition": "badmoonrising",
+    "name": "Godfather",
+    "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+    "otherNightReminder": "If an Outsider died today, the Godfather chooses a player. :reminder:",
+    "team": "minion",
+    "setup": true,
+    "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+    "jinxes": [],
+    "reminders": [
+		"Died Today",
+		"Dead"
+		],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/godfather.png"
+  },
+  {
+    "id": "devilsadvocate_eotr",
+	"edition": "badmoonrising",
+    "name": "Devil's Advocate",
+    "firstNightReminder": "The Devil's Advocate chooses a living player. :reminder:",
+    "otherNightReminder": "The Devil's Advocate chooses a living player. :reminder:",
+    "team": "minion",
+    "setup": false,
+    "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.",
+    "jinxes": [],
+    "reminders": [
+		"Survives Execution"
+		],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/devilsadvocate.png"
+  },
+  {
+    "id": "assassin_eotr",
+	"edition": "badmoonrising",
+    "name": "Assassin",
+    "firstNightReminder": "",
+    "otherNightReminder": "The Assassin might choose a player. :reminder: :reminder:",
+    "team": "minion",
+    "setup": false,
+    "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+    "jinxes": [],
+    "reminders": [
+		"No Ability",
+		"Dead"
+		],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/assassin.png"
+  },
+  {
+    "id": "xaan_eotr",
+	"edition": "experimental",
+    "name": "Xaan",
+    "firstNightReminder": "Mark the Xaan with the <b>NIGHT 1</b> reminder. If X is 1, mark the Xaan with the <b>X</b> reminder token. :reminder: :reminder:",
+    "otherNightReminder": "Change the Xaan reminder token to the relevant night. If it is night X, mark the Xaan with the <b>X</b> reminder token. :reminder: :reminder:",
+    "team": "minion",
+    "setup": true,
+    "ability": "On night X, all Townsfolk are poisoned until dusk. [X Outsiders]",
+    "jinxes": [],
+    "reminders": [
+		"Night 1",
+		"Night 2",
+		"Night 3",
+		"X"
+		],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/xaan.png"
+  },
+  {
+    "id": "scarletwoman_eotr",
+	"edition": "troublebrewing",
+    "name": "Scarlet Woman",
+    "firstNightReminder": "",
+    "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the <b>YOU ARE</b> token, then the Demon token.",
+    "team": "minion",
+    "setup": false,
+    "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
+    "jinxes": [],
+    "reminders": [],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/scarletwoman.png"
+  },
+  {
+    "id": "lilmonsta_eotr",
+	"edition": "experimental",
+    "name": "Lil' Monsta",
+    "firstNightReminder": "Wake all Minions, allow them to choose a babysitter. :reminder:",
+    "otherNightReminder": "1. Wake all Minions, allow them to choose a babysitter. :reminder: 2. A player might die. :reminder:",
+    "team": "demon",
+    "setup": true,
+    "ability": "Each night, Minions choose who babysits Lil' Monsta & \"is the Demon\". Each night*, a player might die. [+1 Minion]",
+    "special": [
+		{
+		"name": "bag-disabled",
+		"type": "selection"
+		}
+	],
+	"jinxes": [
+		{"id": "exorcist_eotr", "reason": "If the Exorcist chooses Lil' Monsta's babysitter, Minions do not wake to choose a babysitter tonight & Lil' Monsta does not kill tonight."},
+		{"id": "goon_eotr", "reason": "If the Minions choose the Goon to babysit Lil' Monsta, the Goon turns evil but does not babysit & Lil' Monsta does not kill tonight. If the Goon was already chosen tonight, this does not happen."},
+		{"id": "devilsadvocate_eotr", "reason": "If the Devil's Advocate saved Lil' Monsta's babysitter from death by execution today, Minions do not wake to choose a babysitter tonight."},
+		{"id": "scarletwoman_eotr", "reason": "If there are 5 or more players alive & Lil' Monsta dies, the Scarlet Woman babysits Lil' Monsta tonight & the Lil' Monsta ability does not kill tonight."}	
+	],
+    "reminders": [
+	"Is The Demon",
+	"Dead"
+	],
+    "remindersGlobal": [],
+    "image": "https://raw.githubusercontent.com/penopan/botc-scripts-penopan/main/Assets/Official_Icons/lilmonsta.png"
+  },
+  {
+    "id": "bootlegger"
+  }
+]
