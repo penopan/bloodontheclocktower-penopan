@@ -1,2 +1,2 @@
-# botc-character-icons
-Blood on the Clocktower character icons
+# Blood on the Clocktower scripts
+Scripts and jsons
